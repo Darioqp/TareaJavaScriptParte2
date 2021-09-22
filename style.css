@@ -67,3 +67,13 @@ p {
 .parrafo3 {
     color: white;
 }
+
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+textarea {
+    font-size: x-large;
+}
