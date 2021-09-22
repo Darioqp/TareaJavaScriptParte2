@@ -7,13 +7,16 @@ function cambiar(color) {
 
 // Ejercicio 2
 
-let comentario = document.querySelector('#area')
+let mensaje = document.getElementById('mensaje')
+let contador = document.getElementById('contador')
 
-comentario.addEventListener('keypress' , function(e) {
+mensaje.addEventListener('input', function(e){
 
-    let cantidadDeCaracteresIngresados = comentario.value.length + 1
-    console.log(cantidadDeCaracteresIngresados)
+    const cantidadMaxima = e.target.getAttribute('maxlength')
+    const cantidadActual = e.target.value.length
+    contador.innerHTML = `${cantidadActual}/${cantidadMaxima}`
 })
+
 
 // Ejercicio 3
 
